@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Downloader songs
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-card>
+    <ion-item>
+      <ion-input
+        label="Link for download:"
+        placeholder="Here"
+        [(ngModel)]="linkVideo">
+      </ion-input>
+    </ion-item>
+  </ion-card>
+
+  <!-- Mostrar el enlace ingresado -->
+  <div id="container" *ngIf="linkVideo">
+    <ion-card id="image"></ion-card>
+    <ion-card id="buttons">
+      <ion-button (click)="downloadMP3()">Download MP3</ion-button>
+      <ion-button (click)="downloadMP4()">Download MP4</ion-button>
+    </ion-card>
   </div>
 </ion-content>

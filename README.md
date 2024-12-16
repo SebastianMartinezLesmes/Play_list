@@ -1,2 +1,2 @@
 # Play list
-A project that uses the Spotify API to create a user-friendly interface for a music player.
+A project that use a backend service for download files of oyutube in mp3 or mp4 format.

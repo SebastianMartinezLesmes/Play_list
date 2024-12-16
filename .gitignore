@@ -1,1 +1,5 @@
+# modulos
 node_modules
+
+# cache
+.angular

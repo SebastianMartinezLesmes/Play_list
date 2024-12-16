@@ -9,4 +9,14 @@ export class HomePage {
 
   constructor() {}
 
+  linkVideo: string = "";
+
+  downloadMP3(){
+    alert("Try downloading in mp3 format")
+  }
+
+  downloadMP4(){
+    alert("Try downloading in mp4 format")
+  }
+
 }
